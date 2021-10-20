@@ -8,6 +8,7 @@ int size,choice,ele;
 struct stack{
     int arr[100];
     int top;
+    int rear;
 
 }st;
 
@@ -57,7 +58,7 @@ void display()
     if((st.top)>=0)
     {
         printf("\n\nElements in the Stack");
-        for(i=st.top;i>=0;i++)
+        for(int i=st.top;i>=0;i++)
         {
             printf("\n%d",st.arr[i]);
         }
